@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add('js')</script>
+
+  <!-- ===== Google: Titel und Beschreibung im Suchergebnis ===== -->
+  <title>Über uns | ianus IT bei München</title>
+  <meta name="description" content="ianus IT unterstützt seit 2007 IT-Abteilungen von Mittelstand, Konzernen und Behörden. Geschäftsführung: Arno Kretschmer und Markus Schwinghammer. Heute in Wolfratshausen bei München.">
+  <link rel="canonical" href="https://www.ianus-it.de/ueber-uns.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="ianus IT">
+  <meta property="og:title" content="Über uns | ianus IT bei München">
+  <meta property="og:description" content="ianus IT unterstützt seit 2007 IT-Abteilungen von Mittelstand, Konzernen und Behörden. Geschäftsführung: Arno Kretschmer und Markus Schwinghammer. Heute in Wolfratshausen bei München.">
+  <meta property="og:url" content="https://www.ianus-it.de/ueber-uns.html">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <!-- VOR DEM LIVEGANG: Schrift selbst hosten (Datenschutz). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <!-- Farbfilter für Fotos: Jedes Bild in den Logoformen und im Bildband
+       bekommt automatisch die ianus-Farben. Neue Fotos einfach austauschen. -->
+  <svg class="filters" aria-hidden="true" focusable="false">
+    <filter id="ton-gruen" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0.31 0.86"/>
+        <feFuncG type="table" tableValues="0.54 0.95"/>
+        <feFuncB type="table" tableValues="0.25 0.80"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="ton-hellgruen" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0.53 0.95"/>
+        <feFuncG type="table" tableValues="0.73 0.98"/>
+        <feFuncB type="table" tableValues="0.29 0.90"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="ton-frisch" color-interpolation-filters="sRGB">
+      <!-- Leistungsbilder: Schatten Anthrazit, Mitteltöne frisches Grün, Lichter Weiß -->
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" exponent="0.6"/><feFuncG type="gamma" exponent="0.6"/><feFuncB type="gamma" exponent="0.6"/>
+      </feComponentTransfer>
+      <feComponentTransfer>
+        <feFuncR type="linear" slope="1.2" intercept="-0.1"/><feFuncG type="linear" slope="1.2" intercept="-0.1"/><feFuncB type="linear" slope="1.2" intercept="-0.1"/>
+      </feComponentTransfer>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0.208 0.498 1"/>
+        <feFuncG type="table" tableValues="0.239 0.722 1"/>
+        <feFuncB type="table" tableValues="0.306 0.353 1"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="ton-anthrazit" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0.13 0.84"/>
+        <feFuncG type="table" tableValues="0.15 0.91"/>
+        <feFuncB type="table" tableValues="0.19 0.80"/>
+      </feComponentTransfer>
+    </filter>
+  </svg>
+
+  <!-- ===================== KOPFZEILE ===================== -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html" aria-label="ianus IT – zur Startseite">
+        <img src="img/ianus-logo.svg" alt="ianus IT – The Service Company" width="180" height="53">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hauptnavigation">Menü</button>
+
+      <nav class="site-nav" id="hauptnavigation" aria-label="Hauptnavigation">
+        <ul class="site-nav__list">
+          <li><a href="index.html#leistungen">Leistungen</a></li>
+          <li><a href="referenzen.html">Referenzen</a></li>
+          <li><a href="ueber-uns.html" aria-current="page">Über uns</a></li>
+          <li><a href="karriere.html">Karriere</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+
+    <!-- ===================== EINSTIEG =====================
+         Bild: vorerst das Rack-Bild. Später gern ein Foto von euch bei der Arbeit (Querformat 4:3). -->
+    <section class="page-hero">
+      <div class="wrap page-hero__grid">
+        <div>
+          <nav class="crumbs" aria-label="Pfad"><a href="index.html">Startseite</a></nav>
+          <h1 class="page-title">Über uns</h1>
+          <p class="lead">ianus IT unterstützt seit 2007 die IT-Abteilungen von Mittelstand, Konzernen und Behörden. Unser Schwerpunkt: Server, Storage, Virtualisierung und Cloud. Heute arbeiten wir von Wolfratshausen bei München aus.</p>
+        </div>
+        <svg class="page-hero__image" viewBox="0 0 1200 1500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><image href="img/platzhalter-rack.jpg" width="1200" height="1500" preserveAspectRatio="xMidYMid slice" filter="url(#ton-frisch)"/></svg>
+      </div>
+    </section>
+
+    <!-- ===================== LEITFRAGE ===================== -->
+    <section class="statement slant" aria-label="Unsere Leitfrage">
+      <div class="wrap">
+        <p class="statement__question">„Ist das für unseren Kunden sinnvoll?“</p>
+        <p class="statement__text">Mit dieser Frage beginnt bei uns jede Aufgabe: ob wir Server- und Storagesysteme einrichten, IT-Sicherheit umsetzen oder bei kniffligen Fragen im Tagesgeschäft helfen.</p>
+      </div>
+    </section>
+
+    <!-- ===================== WIE WIR ARBEITEN ===================== -->
+    <section class="section" aria-labelledby="werte-title">
+      <div class="wrap">
+        <h2 class="section-title" id="werte-title">Wie wir arbeiten</h2>
+        <ul class="features">
+          <li><h3>Tiefes Know-how</h3><p>Wir kennen die IT-Landschaften und Abläufe unserer Kunden. Mit dem Blick von außen benennen wir Themen, die im Betriebsalltag untergehen. Und wir kennen unsere Grenzen.</p></li>
+          <li><h3>Wege offenhalten</h3><p>Unsere Lösungen und Empfehlungen halten viele Wege in die Zukunft offen, statt sie zu verbauen. Cloud oder nicht entscheiden wir mit Ihnen, nicht pauschal.</p></li>
+          <li><h3>Langfristig</h3><p>Geschäftsbeziehungen über zehn bis fünfzehn Jahre sind bei uns die Regel. Auch im Team setzen wir auf lange Zusammenarbeit.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== GESCHÄFTSFÜHRUNG =====================
+         Gestaltet wie Visitenkarten. Fotos sind nicht nötig, können aber später ergänzt werden. -->
+    <section class="section section--mist slant" aria-labelledby="gf-title">
+      <div class="wrap">
+        <h2 class="section-title" id="gf-title">Geschäftsführung</h2>
+        <div class="person-cards">
+          <article class="person-card">
+            <img class="person-card__mark" src="img/favicon.svg" alt="" width="32" height="30">
+            <h3 class="person-card__name">Arno Kretschmer</h3>
+            <p class="person-card__role">Gründer und Geschäftsführer</p>
+            <p>Arbeitet seit Ende der 90er-Jahre in der IT, zuerst als Spezialist in einem Großunternehmen. Er kennt den IT-Betrieb in Konzernen und die Anforderungen im Mittelstand.</p>
+            <p class="person-card__private">Privat: aktiver Triathlet</p>
+          </article>
+          <article class="person-card">
+            <img class="person-card__mark" src="img/favicon.svg" alt="" width="32" height="30">
+            <h3 class="person-card__name">Markus Schwinghammer</h3>
+            <p class="person-card__role">Geschäftsführer</p>
+            <p>Kennt die IT aus Anbieter- und Herstellersicht und verantwortet die kaufmännische Seite. Für ihn stehen Wirtschaftlichkeit und Zukunftssicherheit im Mittelpunkt.</p>
+            <p class="person-card__private">Privat: leidenschaftlicher Eishockey-Fan</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STANDORT ===================== -->
+    <section class="section" aria-labelledby="ort-title">
+      <div class="wrap location">
+        <div>
+          <h2 class="section-title" id="ort-title">Standort</h2>
+          <p class="body-large">Unser Büro liegt heute in Wolfratshausen, rund 30 Kilometer südlich von München. Unsere Kunden betreuen wir überregional, vor Ort und per Fernzugriff.</p>
+          <address class="contact__address address-block">ianus IT GmbH<br>Untermarkt 7<br>82515 Wolfratshausen</address>
+          <p class="more"><a href="https://www.google.com/maps/search/?api=1&amp;query=Untermarkt+7+82515+Wolfratshausen" rel="noopener">Route planen</a></p>
+        </div>
+        <div class="location__map">
+          <svg class="map-mini" viewBox="0 0 300 260" role="img" aria-label="Wolfratshausen liegt rund 30 Kilometer südlich von München">
+            <path d="M128 262 C 140 228, 126 204, 150 172 S 196 118, 186 86 S 190 52, 206 0" fill="none" stroke="#b8c8cf" stroke-width="6" stroke-linecap="round"/>
+            <line x1="110" y1="210" x2="190" y2="50" stroke="#5d6575" stroke-width="2" stroke-dasharray="5 6"/>
+            <circle cx="190" cy="50" r="6" fill="#353d4e"/>
+            <text x="204" y="56" font-family="Barlow, sans-serif" font-size="16" fill="#353d4e">München</text>
+            <circle cx="110" cy="210" r="10" fill="#94c356" stroke="#353d4e" stroke-width="2"/>
+            <text x="128" y="244" font-family="Barlow, sans-serif" font-size="16" font-weight="600" fill="#353d4e">Wolfratshausen</text>
+            <text x="142" y="134" text-anchor="end" font-family="Barlow, sans-serif" font-size="14" fill="#5d6575">ca. 30 km</text>
+            <text x="224" y="226" font-family="Barlow, sans-serif" font-size="12" fill="#5d6575">Isar</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt, bewusst zurückhaltend -->
+    <section class="cta-strip" aria-label="Kontakt">
+      <div class="wrap">
+        <div class="cta-strip__inner">
+          <h2 class="cta-strip__title">Sprechen wir über Ihre IT.</h2>
+          <p class="cta-strip__ways"><a class="contact__phone" href="tel:+498938153700">089 38 153 700</a> <a class="contact__form-link" href="kontakt.html">Zum Kontaktformular</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FUSSZEILE ===================== -->
+  <footer class="site-footer slant">
+    <div class="wrap site-footer__grid">
+      <div>
+        <img src="img/ianus-logo.svg" alt="ianus IT" width="150" height="44">
+        <p class="site-footer__address">Untermarkt 7, 82515 Wolfratshausen<br><a href="tel:+498938153700">089 38 153 700</a></p>
+      </div>
+      <nav aria-label="Fußzeile">
+        <ul class="site-footer__links">
+          <li><a href="planen-und-umsetzen.html">Planen &amp; Umsetzen</a></li>
+          <li><a href="betreiben-und-unterstuetzen.html">Betreiben &amp; Unterstützen</a></li>
+          <li><a href="absichern.html">Absichern</a></li>
+          <li><a href="referenzen.html">Referenzen</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="karriere.html">Karriere</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__legal"><a href="impressum.html">Impressum</a> <a href="datenschutz.html">Datenschutz</a> <span>© ianus IT GmbH</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
